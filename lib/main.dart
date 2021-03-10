@@ -28,9 +28,13 @@ class GirisSayfasi extends StatelessWidget {
               SizedBox(
                 height: 100.0,
               ),
-              FlutterLogo(
-                size: 70.0,
-                textColor: Colors.grey,
+              Container(
+                width: 120,
+                height: 120,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/resim/resim.png"))
+                ),
               ),
               Text("Sociaworld",
                   style: TextStyle(
@@ -62,8 +66,7 @@ class GirisSayfasi extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.blueGrey,
                             borderRadius: BorderRadius.circular(20.0)),
-                      )
-                      ,
+                      ),
                       Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
@@ -78,17 +81,15 @@ class GirisSayfasi extends StatelessWidget {
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white),
                                 ),
-
                                 height: 52.0,
                                 decoration: BoxDecoration(
                                     color: Colors.red[600],
                                     borderRadius: BorderRadius.circular(20.0)),
-
                               ),
-
                             ),
                             SizedBox(
-                              width: 20.0,height: 40,
+                              width: 20.0,
+                              height: 40,
                             ),
                             Expanded(
                               child: Container(
@@ -100,15 +101,12 @@ class GirisSayfasi extends StatelessWidget {
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white),
                                 ),
-
                                 height: 52.0,
                                 decoration: BoxDecoration(
                                     color: Colors.blueAccent,
                                     borderRadius: BorderRadius.circular(20.0)),
                               ),
                             )
-
-
                           ],
                         ),
                       ),
